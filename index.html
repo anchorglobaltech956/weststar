@@ -1,367 +1,514 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>WestStar Foods | U.S. Bean Exporter | Pinto Beans, Black Beans & Pulses</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+WestStar Foods | U.S. Pinto Beans & Black Beans Export Supplier
+</title>
+
+
 <style>
-  @page { size: letter; margin: 0; }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Liberation Sans', Arial, sans-serif; color: #33473F; background:#FAF5E8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  :root { --forest:#245C3A; --gold:#D9A441; --cream:#FAF5E8; --blue:#146C8A; }
-  h1, h2, h3, .disp { font-family: 'Liberation Serif', Georgia, serif; }
-  .page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; background: #F4F8F0; }
-  .page:last-child { page-break-after: auto; }
-  .pad { padding: 0.55in 0.6in; }
-  .accent { color: #3F7D4E; }
-  .cta { color: #1B6E86; }
-  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #1B6E86; margin-bottom: 8px; }
-  .h2 { font-size: 26px; font-weight: 700; color: #16241C; margin: 0 0 10px; line-height: 1.15; }
-  .lead { font-size: 12.5px; line-height: 1.55; color: #3E5560; margin: 0 0 14px; }
-  .wordmark { display: flex; align-items: center; gap: 7px; }
-  .wordmark .star { width: 16px; height: 16px; }
-  .wordmark .name { font-family: 'Liberation Serif', Georgia, serif; font-style: italic; font-weight: 700; letter-spacing: -0.01em; }
-  .tag { font-size: 9.5px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; }
-  .card { border: 1px solid #D7E4EA; border-radius: 8px; background: #FFFFFF; }
-  .ribbon { display: inline-flex; align-items: center; gap: 6px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E141B; background: #E9C77E; padding: 6px 14px; border-radius: 999px; }
-  table { border-collapse: collapse; width: 100%; }
-  td, th { text-align: left; padding: 5px 0; }
+
+* {
+box-sizing:border-box;
+}
+
+
+body {
+
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:#33473F;
+background:#FAF5E8;
+
+}
+
+
+h1,h2,h3 {
+
+font-family:Georgia, serif;
+
+}
+
+
+.hero {
+
+height:90vh;
+
+background:
+linear-gradient(
+rgba(20,40,25,.45),
+rgba(20,40,25,.55)
+),
+url("img/weststar-farmer-hero.webp");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding:60px;
+
+color:white;
+
+}
+
+
+.hero-content {
+
+max-width:750px;
+
+}
+
+
+.hero h1 {
+
+font-size:46px;
+line-height:1.1;
+
+}
+
+
+.hero p {
+
+font-size:20px;
+line-height:1.6;
+
+}
+
+
+.button {
+
+display:inline-block;
+
+background:#D9A441;
+
+color:#16241C;
+
+padding:14px 28px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+margin-right:15px;
+
+}
+
+
+section {
+
+padding:70px 8%;
+
+}
+
+
+.cards {
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:24px;
+max-width:1200px;
+margin:0 auto;
+}
+
+
+.card {
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+min-height:220px;
+}
+
+
+
+
+.card h3 {
+
+color:#245C3A;
+
+}
+
+
+footer {
+
+background:#245C3A;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+/* ============ PRODUCT PORTFOLIO ============ */
+
+.products {
+background:#F4F8F0;
+}
+
+.product-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+max-width:1200px;
+margin:0 auto;
+}
+
+.product-card {
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 6px 22px rgba(0,0,0,.08);
+}
+
+.product-card img {
+width:100%;
+height:250px;
+object-fit:cover;
+display:block;
+}
+
+.product-card-content {
+padding:26px;
+}
+
+.product-card h3 {
+color:#245C3A;
+font-size:26px;
+margin:0 0 12px;
+}
+
+.product-card p {
+line-height:1.6;
+margin:0;
+}
+
+@media (max-width:900px) {
+.product-grid {
+grid-template-columns:1fr;
+}
+}
+/* ============ QUALITY & EXPORT SECTIONS ============ */
+
+.quality-section {
+background:#FFFFFF;
+}
+
+.quality-grid {
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1200px;
+margin:40px auto 0;
+}
+
+.quality-card {
+background:#F4F8F0;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.quality-card h3 {
+color:#245C3A;
+font-size:22px;
+margin-bottom:12px;
+}
+
+.quality-card p {
+line-height:1.6;
+}
+
+
+.export-section {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+background:#F4F8F0;
+}
+
+.export-section img {
+width:100%;
+border-radius:16px;
+box-shadow:0 6px 22px rgba(0,0,0,.12);
+}
+
+.export-section h2 {
+color:#245C3A;
+font-size:40px;
+}
+
+.export-section p {
+font-size:18px;
+line-height:1.7;
+}
+
+
+@media(max-width:900px){
+
+.quality-grid {
+grid-template-columns:1fr;
+}
+
+.export-section {
+grid-template-columns:1fr;
+}
+
+}
 </style>
+
 </head>
+
+
 <body>
 
-<!-- ============ PAGE 1 — COVER ============ -->
-<div class="page" style="background:#0E141B;">
-  <img src="img/hero_beans_cover.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.9;">
-  <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,18,14,0.58) 0%, rgba(10,18,14,0.86) 62%, rgba(10,18,14,0.95) 100%);"></div>
-  <div style="position:relative; height:100%; display:flex; flex-direction:column; justify-content:space-between; padding:0.6in;">
-    <div class="wordmark" style="align-items:baseline;">
-      <svg class="star" viewBox="0 0 24 24" fill="#D9A441" style="align-self:center;"><path d="M12 1.5l2.98 7.09 7.66.62-5.83 5.02 1.78 7.47L12 17.77l-6.59 3.93 1.78-7.47-5.83-5.02 7.66-.62L12 1.5z"></path></svg>
-      <span class="name" style="font-size:26px; color:#FFFFFF;">WestStar Food</span>
-      <span class="tag" style="color:#3F9D63; margin-left:2px;">Co.</span>
-    </div>
-    <div>
-      <div class="ribbon" style="margin-bottom:22px;">New-Crop Season — Book Now</div>
-      <h1 style="font-size:46px; line-height:1.08; font-weight:700; color:#FFFFFF; margin:0 0 18px; max-width:6.6in;">Premium U.S. Beans, Pulses & Lentils — Reliable Supply From Farm to Global Markets.</h1>
-      <p style="font-size:14px; line-height:1.6; color:#E4EBE0; max-width:5.6in; margin:0 0 26px;">A trusted supply partner for importers, distributors, retailers and food manufacturers. WestStar delivers quality beans with flexible packaging, logistics support and export solutions from Texas.</p>
-      <div style="display:flex; gap:12px; margin-bottom:20px;"><span style="background:#D9A441;color:#16241C;padding:10px 18px;border-radius:999px;font-weight:700;font-size:12px;">Request a Quote</span><span style="border:1px solid rgba(255,255,255,.6);color:white;padding:10px 18px;border-radius:999px;font-weight:700;font-size:12px;">Download Catalogue</span></div>
-      <div style="display:flex; gap:28px; font-size:11.5px; color:#C7D6CC; border-top:1px solid rgba(255,255,255,0.25); padding-top:16px;">
-        <div>1134 E Port Ave, Corpus Christi, TX 78401</div>
-        <div>weststarfood.com</div>
-      </div>
-    </div>
-  </div>
+<!-- ============ HERO SECTION ============ -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Premium U.S. Pinto Beans, Black Beans & Pulses
+<br>
+From Farm Supply to Global Markets
+</h1>
+
+
+<p>
+WestStar Food Co. connects trusted agricultural supply networks with quality products, flexible packaging, and export solutions for importers, distributors, retailers, and food manufacturers worldwide.
+</p>
+
+
+<a class="button">
+Request a Quote
+</a>
+
+
+<a class="button" style="background:white;">
+Explore Products
+</a>
+
+
 </div>
 
-<!-- ============ PAGE 2 — OUR STORY / FACILITY ============ -->
-<div class="page">
-  <div style="display:grid; grid-template-columns:1fr 1fr; height:100%;">
-    <div style="position:relative;">
-      <img src="img/warehouse.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
-      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.65) 0%, rgba(10,18,14,0) 45%);"></div>
-      <div style="position:absolute; left:0.4in; bottom:0.4in; color:#FFFFFF; font-size:13px; font-weight:700;">Our facility at the Port of Corpus Christi</div>
-    </div>
-    <div class="pad" style="display:flex; flex-direction:column; justify-content:center;">
-      <div class="eyebrow">About WestStar</div>
-      <h2 class="h2">Specialists in beans, pulses and lentils, from the railcar to the water.</h2>
-      <p class="lead">WestStar is built around one strength: moving dry beans, pulses and lentils efficiently and carefully, from bulk rail receipt through packaging, distribution and export. Positioned at the Port of Corpus Christi with direct rail access, we're set up to serve customers across Texas and throughout the Americas.</p>
-      <div style="display:flex; flex-direction:column; gap:10px; margin:8px 0 20px;">
-        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Wholesale, retail, foodservice &amp; government-ready</div>
-        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Rail-served warehouse at the Port of Corpus Christi</div>
-        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Bagged from 1 lb retail to 1-ton bulk totes</div>
-      </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
-        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
-          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">BNSF · UP · CPKC</div>
-          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">Three Class I railroads connect directly at the port</div>
-        </div>
-        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
-          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">54-ft channel</div>
-          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">Deep-draft ship channel, deepened in 2025</div>
-        </div>
-        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
-          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">~150 mi</div>
-          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">To the Laredo &amp; Rio Grande Valley crossings</div>
-        </div>
-      </div>
-    </div>
-  </div>
+</section>
+<!-- ============ WHY WESTSTAR SECTION ============ -->
+
+<section>
+
+<h2 style="text-align:center; color:#245C3A; font-size:40px;">
+Why International Buyers Choose WestStar
+</h2>
+
+
+<p style="text-align:center; max-width:750px; margin:20px auto 45px; font-size:18px; line-height:1.6;">
+WestStar Food Co. combines U.S. agricultural supply relationships with packaging, logistics, and export support to serve customers worldwide.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>U.S. Bean Supply</h3>
+<p>
+Quality pinto beans, black beans, and pulses sourced for international markets.
+</p>
 </div>
 
-<!-- ============ PAGE 3 — SERVICES / EXPORT CAPABILITY ============ -->
-<div class="page pad">
-  <div class="eyebrow">What We Do</div>
-  <h2 class="h2">End-to-end handling, from warehouse to port — by rail, truck and ocean container.</h2>
-  <p class="lead" style="max-width:6in;">Three core services, built around one goal: getting your beans, pulses and lentils where they need to go, in the condition they left in.</p>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin:18px 0 16px;">
-    <div class="card" style="padding:18px;">
-      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Packaging</h3>
-      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Packaging built for the journey ahead, sized and prepared to your buyer's specifications and destination requirements.</p>
-    </div>
-    <div class="card" style="padding:18px;">
-      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Distribution</h3>
-      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Reliable movement throughout Texas and beyond, coordinated so product reaches distributors and buyers on schedule.</p>
-    </div>
-    <div class="card" style="padding:18px;">
-      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Export &amp; Logistics</h3>
-      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Full export logistics through the Port of Corpus Christi — moved by rail, staged by truck, and loaded into ocean containers — clearing the way to Mexico, the Caribbean, and Central &amp; South America.</p>
-    </div>
-  </div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:22px;">
-    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
-      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="10" height="12" rx="1"></rect><rect x="12" y="4" width="10" height="12" rx="1"></rect><circle cx="5" cy="19.5" r="1.8"></circle><circle cx="9" cy="19.5" r="1.8"></circle><circle cx="16" cy="19.5" r="1.8"></circle><circle cx="20" cy="19.5" r="1.8"></circle><path d="M22 8h5l2 3v3h-7"></path></svg>
-      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Rail</div><div style="font-size:9.5px; color:#5A6B5F;">BNSF, UP &amp; CPKC to our warehouse</div></div>
-    </div>
-    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
-      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="10"></rect><path d="M16 10h6l4 4v2h-10z"></path><circle cx="6" cy="19.5" r="1.8"></circle><circle cx="22" cy="19.5" r="1.8"></circle></svg>
-      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Truck</div><div style="font-size:9.5px; color:#5A6B5F;">Texas &amp; regional distribution</div></div>
-    </div>
-    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
-      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="26" height="18" rx="1"></rect><path d="M8 3v18M14 3v18M20 3v18"></path></svg>
-      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Ocean Container</div><div style="font-size:9.5px; color:#5A6B5F;">Mexico, Caribbean &amp; Latin America</div></div>
-    </div>
-  </div>
-
-  <div style="position:relative; border-radius:8px; overflow:hidden; height:3.6in;">
-    <img src="img/bulk_loading.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;">
-    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.82) 0%, rgba(10,18,14,0.15) 55%, rgba(10,18,14,0) 100%);"></div>
-    <div style="position:absolute; left:0.35in; bottom:0.3in; color:#FFFFFF;">
-      <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:4px;">STAGED FOR WHOLESALE</div>
-      <div style="font-size:15px; font-weight:700; max-width:4.5in;">Bulk bags staged and staff loading product for wholesale and export shipment, right off our warehouse floor.</div>
-    </div>
-  </div>
+<div class="card">
+<h3>Export Experience</h3>
+<p>
+Supporting importers and distributors with dependable supply solutions.
+</p>
 </div>
 
-<!-- ============ PAGE 3.5 — DOOR-TO-DOOR CONTAINER SERVICE ============ -->
-<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
-  <div class="eyebrow">Export Logistics</div>
-  <h2 class="h2">Door-to-door container service, two ways to move.</h2>
-  <p class="lead" style="max-width:6.3in;">Two ways to move your ocean freight: empty containers are loaded directly at our Corpus Christi plant and trucked to Seaboard Marine's terminal for export — or product moves by truck to the Port of Houston, where it's transloaded into containers. Either way, freight moves door to door, with no extra handling in between.</p>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:24px;">
-    <div style="position:relative; border-radius:8px; overflow:hidden; height:3.9in;">
-      <img src="img/houston_crane.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
-      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.80) 0%, rgba(10,18,14,0.1) 55%, rgba(10,18,14,0) 100%);"></div>
-      <div style="position:absolute; left:0.3in; bottom:0.28in; color:#FFFFFF; max-width:2.9in;">
-        <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:5px;">ROUTE ONE — TRUCK &amp; TRANSLOAD</div>
-        <div style="font-size:15px; font-weight:700; line-height:1.3;">Transload at the Port of Houston</div>
-        <div style="font-size:10.5px; color:#D6E9EE; margin-top:6px; line-height:1.5;">Product trucked from our plant to Houston and loaded directly into ocean containers for export.</div>
-      </div>
-    </div>
-    <div style="position:relative; border-radius:8px; overflow:hidden; height:3.9in;">
-      <img src="img/seaboard_terminal.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
-      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.80) 0%, rgba(10,18,14,0.1) 55%, rgba(10,18,14,0) 100%);"></div>
-      <div style="position:absolute; left:0.3in; bottom:0.28in; color:#FFFFFF; max-width:2.9in;">
-        <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:5px;">ROUTE TWO — DOOR-TO-DOOR</div>
-        <div style="font-size:15px; font-weight:700; line-height:1.3;">Export via Seaboard Marine's terminal</div>
-        <div style="font-size:10.5px; color:#D6E9EE; margin-top:6px; line-height:1.5;">Empty containers loaded right at our plant, then trucked straight to Seaboard Marine's terminal for export.</div>
-      </div>
-    </div>
-  </div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:20px;">
-    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
-      <div style="font-size:12.5px; font-weight:700; color:#16241C;">No extra handling</div>
-      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Containers load at the plant — product isn't re-handled at an intermediate dock.</div>
-    </div>
-    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
-      <div style="font-size:12.5px; font-weight:700; color:#16241C;">Two gateway options</div>
-      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Route through Seaboard Marine's terminal or the Port of Houston, whichever fits the routing and schedule.</div>
-    </div>
-    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
-      <div style="font-size:12.5px; font-weight:700; color:#16241C;">Export-ready, on schedule</div>
-      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Coordinated container pickup and delivery keeps export bookings on time.</div>
-    </div>
-  </div>
+<div class="card">
+<h3>Flexible Packaging</h3>
+<p>
+Options designed for retailers, food manufacturers, and wholesale buyers.
+</p>
 </div>
 
-<!-- ============ PAGE 4 — WHO WE SUPPLY ============ -->
-<div class="page pad">
-  <div class="eyebrow">Who We Supply</div>
-  <h2 class="h2">Built for every scale of buyer, from a single pallet to a government tender.</h2>
-  <p class="lead" style="max-width:6.2in;">From wholesale export dealers to the country's largest retail and foodservice buyers, our packaging and logistics are built to meet your volume, your specification, and your paperwork.</p>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:20px;">
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Wholesale &amp; Export Dealers</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Bulk and private-label supply for wholesale dealers exporting into Mexico and beyond, packed to your label and your logistics.</p>
-    </div>
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Retail Grocery Chains</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Retail-ready bag sizes and consistent fill weights built for grocery chains at the scale of an H-E-B or a Kroger.</p>
-    </div>
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Foodservice Distributors</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Consistent case counts and on-time fulfillment for foodservice distributors such as Labatt Food Service and Sysco.</p>
-    </div>
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Club &amp; Warehouse Retailers</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Bulk-format packaging sized for club and warehouse retailers such as Sam's Club and Costco.</p>
-    </div>
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Caribbean Export</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Ocean export to the Dominican Republic and across the Caribbean, documented and loaded at the Port of Corpus Christi.</p>
-    </div>
-    <div class="card" style="padding:20px;">
-      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Government &amp; Institutional Programs</h3>
-      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Specification-ready supply for U.S. government tenders — food bank distributions, export donation programs, school nutrition, and commissaries.</p>
-    </div>
-  </div>
-
-  <div style="margin-top:26px; border-radius:8px; overflow:hidden; position:relative; height:2.6in;">
-    <img src="img/truck_bridge.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 68%;">
-    <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(10,18,14,0.75) 0%, rgba(10,18,14,0.15) 55%, rgba(10,18,14,0) 100%);"></div>
-    <div style="position:absolute; left:0.35in; bottom:0.3in; color:#FFFFFF; font-size:14px; font-weight:700; max-width:4in;">On the road out of the Gulf Coast, headed statewide.</div>
-  </div>
+<div class="card">
+<h3>Reliable Partnerships</h3>
+<p>
+Creating long-term relationships throughout the agricultural supply chain.
+</p>
 </div>
 
-<!-- ============ PAGE 5 — PRODUCT CATALOGUE (SEO PRODUCT STORY) ============ -->
-<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
-  <div class="eyebrow">Our Product Line</div>
-  <h2 class="h2">Beans, pulses &amp; lentils — the full catalogue.</h2>
-  <p class="lead">A full line of dry beans, pulses and lentils, packaged and exported to your specification.</p>
 
-  <div id="productGrid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px 16px; margin-top:14px;"></div>
 </div>
 
-<!-- ============ PAGE 6 — PACKAGING SIZES ============ -->
-<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
-  <div class="eyebrow">Bagged To Your Specification</div>
-  <h2 class="h2">Real WestStar packaging, retail to wholesale.</h2>
+</section>
 
-  <div style="border-radius:8px; overflow:hidden; margin:16px 0; border:1px solid #DEE9D8;">
-    <img src="img/bags_lineup.webp" style="display:block; width:100%; height:auto; max-height:2.9in; object-fit:cover;">
-    <div style="padding:12px 16px; background:#FFFFFF;"><div style="font-size:12px; font-weight:700; color:#16241C;">From a 1 lb retail bag up to a 10 lb family-size bag — every one carrying our Premium Pinto Beans label.</div></div>
-  </div>
+<!-- ============ PRODUCT PORTFOLIO ============ -->
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:center; margin-top:10px;">
-    <div style="border-radius:8px; overflow:hidden; border:1px solid #DEE9D8;">
-      <img src="img/bag_single.webp" style="display:block; width:100%; height:2.4in; object-fit:cover;">
-    </div>
-    <div style="display:flex; flex-direction:column; gap:12px;">
-      <div class="card" style="padding:14px 16px;">
-        <div style="font-size:13px; font-weight:700; color:#16241C;">1 lb / 1 kg — Retail-ready small bags</div>
-      </div>
-      <div class="card" style="padding:14px 16px;">
-        <div style="font-size:13px; font-weight:700; color:#16241C;">50 lb bags — Wholesale &amp; foodservice bags</div>
-      </div>
-      <div class="card" style="padding:14px 16px;">
-        <div style="font-size:13px; font-weight:700; color:#16241C;">1-ton totes — Bulk totes for industrial &amp; institutional buyers</div>
-      </div>
-    </div>
-  </div>
+<section class="products">
+
+<h2 style="text-align:center;color:#245C3A;font-size:40px;">
+Premium Dry Bean Portfolio
+</h2>
+
+<p style="text-align:center;max-width:760px;margin:20px auto 45px;font-size:18px;line-height:1.6;">
+WestStar Food Co. supplies high-demand dry bean varieties for importers, distributors, retailers, foodservice buyers, and food manufacturers across North American and international markets.
+</p>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="img/weststar-pinto-beans.webp" alt="Pinto beans">
+
+<div class="product-card-content">
+<h3>Pinto Beans</h3>
+<p>
+A major dry bean variety widely used throughout Mexico, Latin America, retail markets, foodservice, and food manufacturing.
+</p>
+</div>
 </div>
 
-<!-- ============ PAGE 7 — DISTRIBUTION REACH ============ -->
-<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
-  <div class="eyebrow">Distribution Reach</div>
-  <h2 class="h2">Close to every major Texas market.</h2>
-  <p class="lead" style="max-width:6.2in;">Approximate driving distance from our rail-served warehouse at 1134 E Port Ave, Corpus Christi, TX — to the border crossings, the Rio Grande Valley, and the state's largest metro markets.</p>
+<div class="product-card">
+<img src="img/weststar-black-beans.webp" alt="Black beans">
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:18px;">
-    <div>
-      <h3 style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#3F7D4E; margin:0 0 8px;">U.S.–Mexico Border &amp; Rio Grande Valley</h3>
-      <table id="tblBorder" style="font-size:11px;"></table>
-    </div>
-    <div>
-      <h3 style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#1B6E86; margin:0 0 8px;">Major Texas Markets &amp; Ports</h3>
-      <table id="tblMetro" style="font-size:11px;"></table>
-      <div style="margin-top:18px;" class="card">
-        <img src="img/export_loading.webp" style="display:block; width:100%; height:1.7in; object-fit:cover; border-radius:8px 8px 0 0;">
-        <div style="padding:10px 14px; font-size:10.5px; color:#4E6068;">Export loading at the Port of Corpus Christi.</div>
-      </div>
-    </div>
-  </div>
-  <p style="font-size:9.5px; color:#8B9A8F; margin-top:16px;">Distances are approximate driving miles, for planning purposes.</p>
+<div class="product-card-content">
+<h3>Black Beans</h3>
+<p>
+A high-demand variety for Latin American cuisine, retail distribution, wholesale markets, and food processing applications.
+</p>
+</div>
 </div>
 
-<!-- ============ PAGE 8 — CALL TO ACTION / CONTACT ============ -->
-<div class="page" style="background:#1B6E86; display:flex; flex-direction:column;">
-  <div class="pad" style="flex-grow:1; display:flex; flex-direction:column; justify-content:center; text-align:center; align-items:center;">
-    <div class="ribbon" style="margin-bottom:22px;">New-Crop Season — Book Now</div>
-    <h2 style="font-size:32px; font-weight:700; color:#FFFFFF; max-width:6in; margin:0 0 16px;">Ready to source with WestStar?</h2>
-    <p style="font-size:13px; line-height:1.6; color:#D6E9EE; max-width:5.6in; margin:0 0 28px;">New-crop pinto, black and navy beans are moving through our warehouse now. Lock in your Q4 and holiday-season volume, your export container space, or your government-tender bid before rail and warehouse capacity fills.</p>
+<div class="product-card">
+<img src="img/weststar-navy-beans.webp" alt="Navy beans">
 
-    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; width:100%; max-width:6.4in; margin-bottom:30px; text-align:left;">
-      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
-        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">1. Tell us your need</div>
-        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Product, pack size, volume and target ship date.</div>
-      </div>
-      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
-        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">2. Get a fast quote</div>
-        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Our team responds with pricing and lead time.</div>
-      </div>
-      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
-        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">3. We ship, you sell</div>
-        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Rail-in, bagged to spec, moved by truck or container.</div>
-      </div>
-    </div>
-
-    <div style="background:#FFFFFF; color:#1B6E86; font-size:14px; font-weight:700; padding:14px 30px; border-radius:4px;">Request a Quote — weststarfood.com</div>
-  </div>
-  <div style="background:#0E141B; padding:0.3in 0.6in; display:flex; justify-content:space-between; align-items:center;">
-    <div class="wordmark" style="align-items:baseline;">
-      <svg class="star" viewBox="0 0 24 24" fill="#D9A441" width="13" height="13" style="align-self:center;"><path d="M12 1.5l2.98 7.09 7.66.62-5.83 5.02 1.78 7.47L12 17.77l-6.59 3.93 1.78-7.47-5.83-5.02 7.66-.62L12 1.5z"></path></svg>
-      <span class="name" style="font-size:15px; color:#FFFFFF;">WestStar Food</span>
-      <span class="tag" style="color:#3F9D63;">Co.</span>
-    </div>
-    <div style="font-size:10px; color:#9BB0A2;">1134 E Port Ave, Corpus Christi, TX 78401 &nbsp;·&nbsp; Port of Corpus Christi, Texas</div>
-  </div>
+<div class="product-card-content">
+<h3>Navy Beans</h3>
+<p>
+A versatile white bean commonly used in canned foods, institutional products, food manufacturing, and international markets.
+</p>
+</div>
 </div>
 
-<script>
-const products = [
-  { n: 'Pinto Beans', c: 'Bean', color: '#C9A66B' },
-  { n: 'Black Beans', c: 'Bean', color: '#2B2622' },
-  { n: 'Red Kidney Beans', c: 'Bean', color: '#8B2E28' },
-  { n: 'Navy Beans', c: 'Bean', color: '#EDE6D6' },
-  { n: 'Great Northern Beans', c: 'Bean', color: '#E7E0CC' },
-  { n: 'Garbanzo Beans / Chickpeas', c: 'Bean', color: '#D8B978' },
-  { n: 'Black-Eyed Peas', c: 'Pea', color: '#E9DFC4' },
-  { n: 'Lima Beans', c: 'Bean', color: '#DCE0B0' },
-  { n: 'Adzuki Beans', c: 'Bean', color: '#7B2E2A' },
-  { n: 'Mung Beans', c: 'Bean', color: '#7C8C4A' },
-  { n: 'Fava Beans', c: 'Bean', color: '#C9C08A' },
-  { n: 'Cranberry Beans', c: 'Bean', color: '#C97B5C' },
-  { n: 'Green Lentils', c: 'Lentil', color: '#7C8449' },
-  { n: 'Brown Lentils', c: 'Lentil', color: '#7A5B3E' },
-  { n: 'Red Split Lentils', c: 'Lentil', color: '#C96A4A' },
-  { n: 'Black Beluga Lentils', c: 'Lentil', color: '#221E1C' },
-  { n: 'Yellow Split Peas', c: 'Pulse', color: '#E0C34A' },
-  { n: 'Green Split Peas', c: 'Pulse', color: '#93A25A' }
-];
-const grid = document.getElementById('productGrid');
-products.forEach(p => {
-  const div = document.createElement('div');
-  div.style.cssText = 'display:flex; align-items:center; gap:10px; border:1px solid #DEE9D8; border-radius:6px; padding:10px 12px; background:#FFFFFF;';
-  div.innerHTML = `<span style="width:22px;height:22px;border-radius:50%;flex-shrink:0;background:${p.color};border:1px solid rgba(0,0,0,0.08);"></span><div><div style="font-size:10.5px;font-weight:700;color:#16241C;line-height:1.25;">${p.n}</div><div style="font-size:8.5px;color:#7A8A7E;margin-top:1px;">${p.c}</div></div>`;
-  grid.appendChild(div);
-});
+</div>
 
-const border = [
-  ['El Paso', '650 mi · 1,046 km'], ['Del Rio', '275 mi · 443 km'], ['Eagle Pass', '235 mi · 378 km'],
-  ['Laredo', '140 mi · 225 km'], ['Rio Grande City', '170 mi · 274 km'], ['Mission', '155 mi · 249 km'],
-  ['McAllen', '150 mi · 241 km'], ['Pharr', '148 mi · 238 km'], ['Progreso', '150 mi · 241 km'],
-  ['Harlingen', '135 mi · 217 km'], ['Brownsville', '163 mi · 262 km']
-];
-const metro = [
-  ['Port of Houston', '209 mi · 336 km'], ['San Antonio', '143 mi · 230 km'],
-  ['Austin', '211 mi · 340 km'], ['Dallas–Fort Worth', '400 mi · 644 km']
-];
-function fillTable(id, rows) {
-  const t = document.getElementById(id);
-  rows.forEach(([name, dist]) => {
-    const tr = document.createElement('tr');
-    tr.style.borderBottom = '1px solid #EAF0E6';
-    tr.innerHTML = `<td style="color:#16241C;font-weight:500;">${name}</td><td style="text-align:right;color:#3E5560;font-weight:600;">${dist}</td>`;
-    t.appendChild(tr);
-  });
-}
-fillTable('tblBorder', border);
-fillTable('tblMetro', metro);
-</script>
+</section>
+<!-- ============ QUALITY ASSURANCE SECTION ============ -->
 
-<div style="text-align:center;padding:20px;background:#245C3A;color:white;font-size:12px;">WestStar Foods — Connecting U.S. Bean Producers With Global Markets</div>
+<section class="quality-section">
+
+<h2 style="text-align:center;color:#245C3A;font-size:40px;">
+Quality You Can Trust
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:20px auto 45px;font-size:18px;line-height:1.6;">
+
+WestStar Food Co. supports international buyers with quality-focused sourcing, product specifications, export documentation, and logistics coordination for reliable shipments.
+
+</p>
+
+
+<div class="quality-grid">
+
+
+<div class="quality-card">
+
+<h3>U.S. Quality Standards</h3>
+
+<p>
+Quality-focused sourcing and product requirements designed for international markets.
+</p>
+
+</div>
+
+
+<div class="quality-card">
+
+<h3>Product Specifications</h3>
+
+<p>
+Clear product information, varieties, and packaging options for buyer requirements.
+</p>
+
+</div>
+
+
+<div class="quality-card">
+
+<h3>Export Documentation</h3>
+
+<p>
+Support with required paperwork and documentation processes for international shipments.
+</p>
+
+</div>
+
+
+<div class="quality-card">
+
+<h3>Phytosanitary Support</h3>
+
+<p>
+Coordination of required certificates according to destination market requirements.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+<!-- ============ EXPORT LOGISTICS SECTION ============ -->
+
+<section class="export-section">
+
+<div>
+
+<img src="img/weststar-export-hero.webp"
+alt="WestStar Food Co. export logistics">
+
+</div>
+
+
+<div>
+
+<h2>
+From U.S. Supply to Global Markets
+</h2>
+
+
+<p>
+WestStar Food Co. connects reliable North American agricultural supply with international buyers through quality products, export documentation support, and logistics coordination.
+</p>
+
+
+<p>
+From origin to destination, WestStar helps customers move dry bean products efficiently to global markets.
+</p>
+
+
+<a class="button">
+Request Export Information
+</a>
+
+</div>
+
+</section>
+
 </body>
+
 </html>
