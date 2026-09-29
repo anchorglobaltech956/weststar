@@ -2,232 +2,363 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anchor Global Tech | Commercial Dry Bean & Agricultural Commodity Catalogue</title>
+<title>WestStar Foods — Brochure &amp; Catalogue</title>
 <style>
-:root {
-  --primary: #1b382b;
-  --primary-light: #e2ebe4;
-  --accent: #d97706;
-  --bg: #f5f4ef;
-  --card-bg: #ffffff;
-  --text: #1f2923;
-  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-}
-
-* { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
-
-header { background: var(--primary); color: #fff; padding: 2.5rem 1.5rem; }
-.header-container { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; }
-.header-titles h1 { margin: 0 0 0.5rem; font-size: 2.2rem; }
-.header-titles p { margin: 0; opacity: 0.85; font-size: 1rem; }
-
-.controls { display: flex; gap: 0.75rem; }
-.toggle-btn { background: rgba(255, 255, 255, 0.15); color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.6rem 1.2rem; border-radius: 20px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-.toggle-btn:hover { background: rgba(255, 255, 255, 0.25); }
-.toggle-btn.active { background: var(--accent); border-color: var(--accent); }
-
-main { max-width: 1200px; margin: 0 auto; padding: 2.5rem 1.5rem; }
-
-.shipping-banner { background: var(--primary-light); border-left: 5px solid var(--primary); padding: 1.25rem; border-radius: 6px; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.shipping-info h3 { margin: 0 0 0.25rem; color: var(--primary); }
-.shipping-info p { margin: 0; font-size: 0.95rem; }
-
-.section-title { font-size: 1.6rem; color: var(--primary); border-bottom: 2px solid var(--primary-light); padding-bottom: 0.5rem; margin: 2rem 0 1.5rem; }
-
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
-
-/* Product Card & Bag Mockup */
-.card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
-.card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15); }
-
-.bag-wrapper { background: linear-gradient(135deg, #e8e3d5 0%, #dcd5c4 100%); padding: 1.5rem; display: flex; justify-content: center; align-items: center; position: relative; }
-.img-container { position: relative; width: 100%; max-width: 200px; border-radius: 8px; overflow: hidden; cursor: pointer; box-shadow: 0 8px 16px rgba(0,0,0,0.15); background: #fff; }
-
-.img-container img { width: 100%; height: 180px; object-fit: cover; display: block; filter: brightness(1.1) contrast(1.08) saturate(1.1); transition: transform 0.3s, filter 0.3s; }
-.img-container:hover img { transform: scale(1.05); filter: brightness(1.18) contrast(1.1) saturate(1.15); }
-
-.zoom-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; color: #fff; font-size: 0.85rem; font-weight: bold; }
-.img-container:hover .zoom-overlay { opacity: 1; }
-
-.bag-tag { position: absolute; bottom: 8px; right: 8px; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; z-index: 2; }
-
-.card-body { padding: 1.25rem; display: flex; flex-direction: column; flex: 1; }
-.card-body h2 { font-size: 1.3rem; margin: 0 0 0.5rem; color: var(--primary); }
-.card-body p { margin: 0 0 1rem; font-size: 0.92rem; line-height: 1.5; color: #4a5568; }
-.meta-info { margin-top: auto; border-top: 1px solid #edf2f7; padding-top: 0.75rem; font-size: 0.85rem; color: #718096; display: flex; justify-content: space-between; }
-
-/* Modal Lightbox */
-.modal { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); z-index: 1000; align-items: center; justify-content: center; padding: 1.5rem; backdrop-filter: blur(4px); }
-.modal.active { display: flex; }
-.modal-content { max-width: 800px; width: 100%; background: #fff; border-radius: 12px; overflow: hidden; position: relative; animation: fadeIn 0.25s ease-out; }
-.modal-img-wrap { background: #000; display: flex; justify-content: center; align-items: center; max-height: 70vh; }
-.modal-img-wrap img { max-width: 100%; max-height: 70vh; object-fit: contain; filter: brightness(1.12) contrast(1.08); }
-.modal-info { padding: 1.5rem; }
-.modal-close { position: absolute; top: 12px; right: 16px; background: rgba(0,0,0,0.5); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10; }
-.modal-close:hover { background: rgba(0,0,0,0.8); }
-
-@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+  @page { size: letter; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Liberation Sans', Arial, sans-serif; color: #33473F; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  h1, h2, h3, .disp { font-family: 'Liberation Serif', Georgia, serif; }
+  .page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; background: #F4F8F0; }
+  .page:last-child { page-break-after: auto; }
+  .pad { padding: 0.55in 0.6in; }
+  .accent { color: #3F7D4E; }
+  .cta { color: #1B6E86; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #1B6E86; margin-bottom: 8px; }
+  .h2 { font-size: 26px; font-weight: 700; color: #16241C; margin: 0 0 10px; line-height: 1.15; }
+  .lead { font-size: 12.5px; line-height: 1.55; color: #3E5560; margin: 0 0 14px; }
+  .wordmark { display: flex; align-items: center; gap: 7px; }
+  .wordmark .star { width: 16px; height: 16px; }
+  .wordmark .name { font-family: 'Liberation Serif', Georgia, serif; font-style: italic; font-weight: 700; letter-spacing: -0.01em; }
+  .tag { font-size: 9.5px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; }
+  .card { border: 1px solid #D7E4EA; border-radius: 8px; background: #FFFFFF; }
+  .ribbon { display: inline-flex; align-items: center; gap: 6px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E141B; background: #E9C77E; padding: 6px 14px; border-radius: 999px; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { text-align: left; padding: 5px 0; }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-container">
-    <div class="header-titles">
-      <h1 id="title">Commercial Agricultural Commodity Catalogue</h1>
-      <p id="subtitle">Direct-from-source dry beans, pulses, and grains packaged for distribution and international freight logistics.</p>
+<!-- ============ PAGE 1 — COVER ============ -->
+<div class="page" style="background:#0E141B;">
+  <img src="img/hero_beans_cover.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.9;">
+  <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,18,14,0.58) 0%, rgba(10,18,14,0.86) 62%, rgba(10,18,14,0.95) 100%);"></div>
+  <div style="position:relative; height:100%; display:flex; flex-direction:column; justify-content:space-between; padding:0.6in;">
+    <div class="wordmark" style="align-items:baseline;">
+      <svg class="star" viewBox="0 0 24 24" fill="#D9A441" style="align-self:center;"><path d="M12 1.5l2.98 7.09 7.66.62-5.83 5.02 1.78 7.47L12 17.77l-6.59 3.93 1.78-7.47-5.83-5.02 7.66-.62L12 1.5z"></path></svg>
+      <span class="name" style="font-size:26px; color:#FFFFFF;">WestStar Food</span>
+      <span class="tag" style="color:#3F9D63; margin-left:2px;">Co.</span>
     </div>
-    <div class="controls">
-      <button class="toggle-btn active" id="lang-btn" onclick="toggleLanguage()">ES / EN</button>
-      <button class="toggle-btn" id="unit-btn" onclick="toggleUnits()">Metric / Imperial</button>
-    </div>
-  </div>
-</header>
-
-<main>
-  <div class="shipping-banner">
-    <div class="shipping-info">
-      <h3 id="ship-title">Freight & Bulk Cross-Border Shipping</h3>
-      <p id="ship-desc">Available in 25 lb, 50 lb, and 2,000 lb super sacks. Full truckload (FTL) and railcar export options across US/Mexico ports of entry.</p>
-    </div>
-  </div>
-
-  <h2 class="section-title" id="sec-beans">Dry Beans</h2>
-  <div class="grid">
-    <!-- Pinto Beans -->
-    <article class="card">
-      <div class="bag-wrapper">
-        <div class="img-container" onclick="openModal('data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA', 'Pinto Beans')">
-          <img src="data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA" alt="Pinto Beans">
-          <div class="zoom-overlay">🔍 Click to Expand</div>
-        </div>
-        <span class="bag-tag unit-val" data-imp="25 lb / 50 lb / Super Sack" data-met="11.3 kg / 22.6 kg / 907 kg">25 lb / 50 lb / Super Sack</span>
+    <div>
+      <div class="ribbon" style="margin-bottom:22px;">New-Crop Season — Book Now</div>
+      <h1 style="font-size:46px; line-height:1.08; font-weight:700; color:#FFFFFF; margin:0 0 18px; max-width:6.6in;">Beans, pulses and lentils — packed and exported to move your business forward.</h1>
+      <p style="font-size:14px; line-height:1.6; color:#E4EBE0; max-width:5.6in; margin:0 0 26px;">Company Brochure &amp; Product Catalogue — packaging, distribution and export services for wholesale, retail, foodservice, export and government buyers, from a rail-served warehouse at the Port of Corpus Christi, Texas.</p>
+      <div style="display:flex; gap:28px; font-size:11.5px; color:#C7D6CC; border-top:1px solid rgba(255,255,255,0.25); padding-top:16px;">
+        <div>1134 E Port Ave, Corpus Christi, TX 78401</div>
+        <div>weststarfood.com</div>
       </div>
-      <div class="card-body">
-        <h2 class="item-name" data-en="Pinto Beans" data-es="Frijol Pinto">Pinto Beans</h2>
-        <p class="item-desc" data-en="High-grade speckled pinto beans. Creamy texture when cooked, ideal for commercial food processing and retail distribution." data-es="Frijol pinto de alta calidad. Textura cremosa al cocinarse, ideal para procesamiento comercial de alimentos y distribución al mayoreo.">High-grade speckled pinto beans. Creamy texture when cooked, ideal for commercial food processing and retail distribution.</p>
-        <div class="meta-info">
-          <span class="cook-time" data-en="Cook: 60-90 min" data-es="Cocción: 60-90 min">Cook: 60-90 min</span>
-          <span>US No. 1 Grade</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Black Beans -->
-    <article class="card">
-      <div class="bag-wrapper">
-        <div class="img-container" onclick="openModal('data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA', 'Black Beans')">
-          <img src="data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA" alt="Black Beans">
-          <div class="zoom-overlay">🔍 Click to Expand</div>
-        </div>
-        <span class="bag-tag unit-val" data-imp="25 lb / 50 lb / Super Sack" data-met="11.3 kg / 22.6 kg / 907 kg">25 lb / 50 lb / Super Sack</span>
-      </div>
-      <div class="card-body">
-        <h2 class="item-name" data-en="Black Turtle Beans" data-es="Frijol Negro">Black Turtle Beans</h2>
-        <p class="item-desc" data-en="Dense, velvety black beans with mild sweetness. Holds shape excellently in canning, soups, and wholesale food production." data-es="Frijol negro denso y terciopelado con dulzura suave. Mantiene su forma de manera excelente en enlatados, sopas y producción de alimentos al mayoreo.">Dense, velvety black beans with mild sweetness. Holds shape excellently in canning, soups, and wholesale food production.</p>
-        <div class="meta-info">
-          <span class="cook-time" data-en="Cook: 60-75 min" data-es="Cocción: 60-75 min">Cook: 60-75 min</span>
-          <span>US No. 1 Grade</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Great Northern Beans -->
-    <article class="card">
-      <div class="bag-wrapper">
-        <div class="img-container" onclick="openModal('data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA', 'Great Northern Beans')">
-          <img src="data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA" alt="Great Northern Beans">
-          <div class="zoom-overlay">🔍 Click to Expand</div>
-        </div>
-        <span class="bag-tag unit-val" data-imp="25 lb / 50 lb / Super Sack" data-met="11.3 kg / 22.6 kg / 907 kg">25 lb / 50 lb / Super Sack</span>
-      </div>
-      <div class="card-body">
-        <h2 class="item-name" data-en="Great Northern Beans" data-es="Frijol Blanco Northern">Great Northern Beans</h2>
-        <p class="item-desc" data-en="Medium white beans with delicate flavor and tender skin. Absorbs seasoning exceptionally well in stews and commercial canned products." data-es="Frijol blanco mediano con sabor delicado y piel tierna. Absorbe los condimentos excepcionalmente bien en guisados y productos enlatados comerciales.">Medium white beans with delicate flavor and tender skin. Absorbs seasoning exceptionally well in stews and commercial canned products.</p>
-        <div class="meta-info">
-          <span class="cook-time" data-en="Cook: 45-60 min" data-es="Cocción: 45-60 min">Cook: 45-60 min</span>
-          <span>US No. 1 Grade</span>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <h2 class="section-title" id="sec-lentils">Lentils & Pulses</h2>
-  <div class="grid">
-    <!-- Brown Lentils -->
-    <article class="card">
-      <div class="bag-wrapper">
-        <div class="img-container" onclick="openModal('data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA', 'Brown Lentils')">
-          <img src="data:image/webp;base64,UklGRkAAAABXRUJQVlA4WAoAAAAgAAAAAQEAAQAAQUxQSAIAAAAAAFZQOCAYAAAAwAEAnQEdAJ0BHwAAAABXRUJQVlA4IB4AAAAwAQCdASoBAAEAAkA4JaACdAE8A3AA/v38AAAA" alt="Brown Lentils">
-          <div class="zoom-overlay">🔍 Click to Expand</div>
-        </div>
-        <span class="bag-tag unit-val" data-imp="20 lb / 50 lb / Super Sack" data-met="9.07 kg / 22.6 kg / 907 kg">20 lb / 50 lb / Super Sack</span>
-      </div>
-      <div class="card-body">
-        <h2 class="item-name" data-en="Brown Lentils" data-es="Lentejas Pardas">Brown Lentils</h2>
-        <p class="item-desc" data-en="Earthy, versatile lentils that maintain structural integrity during cooking. High demand across food services and bulk retail." data-es="Lentejas de sabor terroso y versátiles que mantienen su integridad estructural durante la cocción. Alta demanda en servicios de alimentos y venta a granel.">Earthy, versatile lentils that maintain structural integrity during cooking. High demand across food services and bulk retail.</p>
-        <div class="meta-info">
-          <span class="cook-time" data-en="Cook: 20-30 min" data-es="Cocción: 20-30 min">Cook: 20-30 min</span>
-          <span>US No. 1 Grade</span>
-        </div>
-      </div>
-    </article>
-  </div>
-</main>
-
-<div class="modal" id="imageModal" onclick="closeModal(event)">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="closeModal()">&times;</button>
-    <div class="modal-img-wrap">
-      <img id="modalImg" src="" alt="Expanded View">
-    </div>
-    <div class="modal-info">
-      <h3 id="modalCaption" style="margin:0; color:var(--primary);"></h3>
     </div>
   </div>
 </div>
 
+<!-- ============ PAGE 2 — OUR STORY / FACILITY ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns:1fr 1fr; height:100%;">
+    <div style="position:relative;">
+      <img src="img/warehouse.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.65) 0%, rgba(10,18,14,0) 45%);"></div>
+      <div style="position:absolute; left:0.4in; bottom:0.4in; color:#FFFFFF; font-size:13px; font-weight:700;">Our facility at the Port of Corpus Christi</div>
+    </div>
+    <div class="pad" style="display:flex; flex-direction:column; justify-content:center;">
+      <div class="eyebrow">About WestStar</div>
+      <h2 class="h2">Specialists in beans, pulses and lentils, from the railcar to the water.</h2>
+      <p class="lead">WestStar is built around one strength: moving dry beans, pulses and lentils efficiently and carefully, from bulk rail receipt through packaging, distribution and export. Positioned at the Port of Corpus Christi with direct rail access, we're set up to serve customers across Texas and throughout the Americas.</p>
+      <div style="display:flex; flex-direction:column; gap:10px; margin:8px 0 20px;">
+        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Wholesale, retail, foodservice &amp; government-ready</div>
+        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Rail-served warehouse at the Port of Corpus Christi</div>
+        <div style="display:flex; gap:8px; font-size:12px; color:#33473F;"><span class="cta" style="font-weight:700;">&#10003;</span> Bagged from 1 lb retail to 1-ton bulk totes</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
+        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
+          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">BNSF · UP · CPKC</div>
+          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">Three Class I railroads connect directly at the port</div>
+        </div>
+        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
+          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">54-ft channel</div>
+          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">Deep-draft ship channel, deepened in 2025</div>
+        </div>
+        <div class="card" style="border-left:3px solid #1B6E86; padding:12px 13px;">
+          <div class="disp" style="font-size:14px; font-weight:700; color:#16241C;">~150 mi</div>
+          <div style="font-size:9.5px; color:#4E6068; margin-top:4px; line-height:1.35;">To the Laredo &amp; Rio Grande Valley crossings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE 3 — SERVICES / EXPORT CAPABILITY ============ -->
+<div class="page pad">
+  <div class="eyebrow">What We Do</div>
+  <h2 class="h2">End-to-end handling, from warehouse to port — by rail, truck and ocean container.</h2>
+  <p class="lead" style="max-width:6in;">Three core services, built around one goal: getting your beans, pulses and lentils where they need to go, in the condition they left in.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin:18px 0 16px;">
+    <div class="card" style="padding:18px;">
+      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Packaging</h3>
+      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Packaging built for the journey ahead, sized and prepared to your buyer's specifications and destination requirements.</p>
+    </div>
+    <div class="card" style="padding:18px;">
+      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Distribution</h3>
+      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Reliable movement throughout Texas and beyond, coordinated so product reaches distributors and buyers on schedule.</p>
+    </div>
+    <div class="card" style="padding:18px;">
+      <h3 style="font-size:14.5px; font-weight:700; color:#16241C; margin:0 0 6px;">Export &amp; Logistics</h3>
+      <p style="font-size:11px; line-height:1.5; color:#5A6B5F; margin:0;">Full export logistics through the Port of Corpus Christi — moved by rail, staged by truck, and loaded into ocean containers — clearing the way to Mexico, the Caribbean, and Central &amp; South America.</p>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:22px;">
+    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
+      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="10" height="12" rx="1"></rect><rect x="12" y="4" width="10" height="12" rx="1"></rect><circle cx="5" cy="19.5" r="1.8"></circle><circle cx="9" cy="19.5" r="1.8"></circle><circle cx="16" cy="19.5" r="1.8"></circle><circle cx="20" cy="19.5" r="1.8"></circle><path d="M22 8h5l2 3v3h-7"></path></svg>
+      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Rail</div><div style="font-size:9.5px; color:#5A6B5F;">BNSF, UP &amp; CPKC to our warehouse</div></div>
+    </div>
+    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
+      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="10"></rect><path d="M16 10h6l4 4v2h-10z"></path><circle cx="6" cy="19.5" r="1.8"></circle><circle cx="22" cy="19.5" r="1.8"></circle></svg>
+      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Truck</div><div style="font-size:9.5px; color:#5A6B5F;">Texas &amp; regional distribution</div></div>
+    </div>
+    <div class="card" style="padding:13px 15px; display:flex; align-items:center; gap:10px;">
+      <svg width="26" height="20" viewBox="0 0 30 24" fill="none" stroke="#1B6E86" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="26" height="18" rx="1"></rect><path d="M8 3v18M14 3v18M20 3v18"></path></svg>
+      <div><div style="font-size:12px; font-weight:700; color:#16241C;">Ocean Container</div><div style="font-size:9.5px; color:#5A6B5F;">Mexico, Caribbean &amp; Latin America</div></div>
+    </div>
+  </div>
+
+  <div style="position:relative; border-radius:8px; overflow:hidden; height:3.6in;">
+    <img src="img/bulk_loading.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;">
+    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.82) 0%, rgba(10,18,14,0.15) 55%, rgba(10,18,14,0) 100%);"></div>
+    <div style="position:absolute; left:0.35in; bottom:0.3in; color:#FFFFFF;">
+      <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:4px;">STAGED FOR WHOLESALE</div>
+      <div style="font-size:15px; font-weight:700; max-width:4.5in;">Bulk bags staged and staff loading product for wholesale and export shipment, right off our warehouse floor.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE 3.5 — DOOR-TO-DOOR CONTAINER SERVICE ============ -->
+<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
+  <div class="eyebrow">Export Logistics</div>
+  <h2 class="h2">Door-to-door container service, two ways to move.</h2>
+  <p class="lead" style="max-width:6.3in;">Two ways to move your ocean freight: empty containers are loaded directly at our Corpus Christi plant and trucked to Seaboard Marine's terminal for export — or product moves by truck to the Port of Houston, where it's transloaded into containers. Either way, freight moves door to door, with no extra handling in between.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:24px;">
+    <div style="position:relative; border-radius:8px; overflow:hidden; height:3.9in;">
+      <img src="img/houston_crane.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.80) 0%, rgba(10,18,14,0.1) 55%, rgba(10,18,14,0) 100%);"></div>
+      <div style="position:absolute; left:0.3in; bottom:0.28in; color:#FFFFFF; max-width:2.9in;">
+        <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:5px;">ROUTE ONE — TRUCK &amp; TRANSLOAD</div>
+        <div style="font-size:15px; font-weight:700; line-height:1.3;">Transload at the Port of Houston</div>
+        <div style="font-size:10.5px; color:#D6E9EE; margin-top:6px; line-height:1.5;">Product trucked from our plant to Houston and loaded directly into ocean containers for export.</div>
+      </div>
+    </div>
+    <div style="position:relative; border-radius:8px; overflow:hidden; height:3.9in;">
+      <img src="img/seaboard_terminal.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,0.80) 0%, rgba(10,18,14,0.1) 55%, rgba(10,18,14,0) 100%);"></div>
+      <div style="position:absolute; left:0.3in; bottom:0.28in; color:#FFFFFF; max-width:2.9in;">
+        <div style="font-size:10.5px; font-weight:700; letter-spacing:0.04em; color:#E9C77E; margin-bottom:5px;">ROUTE TWO — DOOR-TO-DOOR</div>
+        <div style="font-size:15px; font-weight:700; line-height:1.3;">Export via Seaboard Marine's terminal</div>
+        <div style="font-size:10.5px; color:#D6E9EE; margin-top:6px; line-height:1.5;">Empty containers loaded right at our plant, then trucked straight to Seaboard Marine's terminal for export.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:20px;">
+    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
+      <div style="font-size:12.5px; font-weight:700; color:#16241C;">No extra handling</div>
+      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Containers load at the plant — product isn't re-handled at an intermediate dock.</div>
+    </div>
+    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
+      <div style="font-size:12.5px; font-weight:700; color:#16241C;">Two gateway options</div>
+      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Route through Seaboard Marine's terminal or the Port of Houston, whichever fits the routing and schedule.</div>
+    </div>
+    <div class="card" style="border-left:3px solid #1B6E86; padding:13px 15px;">
+      <div style="font-size:12.5px; font-weight:700; color:#16241C;">Export-ready, on schedule</div>
+      <div style="font-size:9.5px; color:#5A6B5F; margin-top:4px; line-height:1.4;">Coordinated container pickup and delivery keeps export bookings on time.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE 4 — WHO WE SUPPLY ============ -->
+<div class="page pad">
+  <div class="eyebrow">Who We Supply</div>
+  <h2 class="h2">Built for every scale of buyer, from a single pallet to a government tender.</h2>
+  <p class="lead" style="max-width:6.2in;">From wholesale export dealers to the country's largest retail and foodservice buyers, our packaging and logistics are built to meet your volume, your specification, and your paperwork.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:20px;">
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Wholesale &amp; Export Dealers</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Bulk and private-label supply for wholesale dealers exporting into Mexico and beyond, packed to your label and your logistics.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Retail Grocery Chains</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Retail-ready bag sizes and consistent fill weights built for grocery chains at the scale of an H-E-B or a Kroger.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Foodservice Distributors</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Consistent case counts and on-time fulfillment for foodservice distributors such as Labatt Food Service and Sysco.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Club &amp; Warehouse Retailers</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Bulk-format packaging sized for club and warehouse retailers such as Sam's Club and Costco.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Caribbean Export</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Ocean export to the Dominican Republic and across the Caribbean, documented and loaded at the Port of Corpus Christi.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <h3 style="font-size:14px; font-weight:700; color:#16241C; margin:0 0 8px;">Government &amp; Institutional Programs</h3>
+      <p style="font-size:11px; line-height:1.55; color:#5A6B5F; margin:0;">Specification-ready supply for U.S. government tenders — food bank distributions, export donation programs, school nutrition, and commissaries.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:26px; border-radius:8px; overflow:hidden; position:relative; height:2.6in;">
+    <img src="img/truck_bridge.webp" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 68%;">
+    <div style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(10,18,14,0.75) 0%, rgba(10,18,14,0.15) 55%, rgba(10,18,14,0) 100%);"></div>
+    <div style="position:absolute; left:0.35in; bottom:0.3in; color:#FFFFFF; font-size:14px; font-weight:700; max-width:4in;">On the road out of the Gulf Coast, headed statewide.</div>
+  </div>
+</div>
+
+<!-- ============ PAGE 5 — PRODUCT CATALOGUE ============ -->
+<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
+  <div class="eyebrow">Our Product Line</div>
+  <h2 class="h2">Beans, pulses &amp; lentils — the full catalogue.</h2>
+  <p class="lead">A full line of dry beans, pulses and lentils, packaged and exported to your specification.</p>
+
+  <div id="productGrid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px 16px; margin-top:14px;"></div>
+</div>
+
+<!-- ============ PAGE 6 — PACKAGING SIZES ============ -->
+<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
+  <div class="eyebrow">Bagged To Your Specification</div>
+  <h2 class="h2">Real WestStar packaging, retail to wholesale.</h2>
+
+  <div style="border-radius:8px; overflow:hidden; margin:16px 0; border:1px solid #DEE9D8;">
+    <img src="img/bags_lineup.webp" style="display:block; width:100%; height:auto; max-height:2.9in; object-fit:cover;">
+    <div style="padding:12px 16px; background:#FFFFFF;"><div style="font-size:12px; font-weight:700; color:#16241C;">From a 1 lb retail bag up to a 10 lb family-size bag — every one carrying our Premium Pinto Beans label.</div></div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:center; margin-top:10px;">
+    <div style="border-radius:8px; overflow:hidden; border:1px solid #DEE9D8;">
+      <img src="img/bag_single.webp" style="display:block; width:100%; height:2.4in; object-fit:cover;">
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <div class="card" style="padding:14px 16px;">
+        <div style="font-size:13px; font-weight:700; color:#16241C;">1 lb / 1 kg — Retail-ready small bags</div>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="font-size:13px; font-weight:700; color:#16241C;">50 lb bags — Wholesale &amp; foodservice bags</div>
+      </div>
+      <div class="card" style="padding:14px 16px;">
+        <div style="font-size:13px; font-weight:700; color:#16241C;">1-ton totes — Bulk totes for industrial &amp; institutional buyers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE 7 — DISTRIBUTION REACH ============ -->
+<div class="page pad" style="display:flex; flex-direction:column; justify-content:center;">
+  <div class="eyebrow">Distribution Reach</div>
+  <h2 class="h2">Close to every major Texas market.</h2>
+  <p class="lead" style="max-width:6.2in;">Approximate driving distance from our rail-served warehouse at 1134 E Port Ave, Corpus Christi, TX — to the border crossings, the Rio Grande Valley, and the state's largest metro markets.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:18px;">
+    <div>
+      <h3 style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#3F7D4E; margin:0 0 8px;">U.S.–Mexico Border &amp; Rio Grande Valley</h3>
+      <table id="tblBorder" style="font-size:11px;"></table>
+    </div>
+    <div>
+      <h3 style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#1B6E86; margin:0 0 8px;">Major Texas Markets &amp; Ports</h3>
+      <table id="tblMetro" style="font-size:11px;"></table>
+      <div style="margin-top:18px;" class="card">
+        <img src="img/export_loading.webp" style="display:block; width:100%; height:1.7in; object-fit:cover; border-radius:8px 8px 0 0;">
+        <div style="padding:10px 14px; font-size:10.5px; color:#4E6068;">Export loading at the Port of Corpus Christi.</div>
+      </div>
+    </div>
+  </div>
+  <p style="font-size:9.5px; color:#8B9A8F; margin-top:16px;">Distances are approximate driving miles, for planning purposes.</p>
+</div>
+
+<!-- ============ PAGE 8 — CALL TO ACTION / CONTACT ============ -->
+<div class="page" style="background:#1B6E86; display:flex; flex-direction:column;">
+  <div class="pad" style="flex-grow:1; display:flex; flex-direction:column; justify-content:center; text-align:center; align-items:center;">
+    <div class="ribbon" style="margin-bottom:22px;">New-Crop Season — Book Now</div>
+    <h2 style="font-size:32px; font-weight:700; color:#FFFFFF; max-width:6in; margin:0 0 16px;">Ready to source with WestStar?</h2>
+    <p style="font-size:13px; line-height:1.6; color:#D6E9EE; max-width:5.6in; margin:0 0 28px;">New-crop pinto, black and navy beans are moving through our warehouse now. Lock in your Q4 and holiday-season volume, your export container space, or your government-tender bid before rail and warehouse capacity fills.</p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; width:100%; max-width:6.4in; margin-bottom:30px; text-align:left;">
+      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
+        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">1. Tell us your need</div>
+        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Product, pack size, volume and target ship date.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
+        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">2. Get a fast quote</div>
+        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Our team responds with pricing and lead time.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25); border-radius:8px; padding:16px;">
+        <div style="color:#E9C77E; font-weight:700; font-size:13px; margin-bottom:5px;">3. We ship, you sell</div>
+        <div style="color:#D6E9EE; font-size:10.5px; line-height:1.5;">Rail-in, bagged to spec, moved by truck or container.</div>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF; color:#1B6E86; font-size:14px; font-weight:700; padding:14px 30px; border-radius:4px;">Request a Quote — weststarfood.com</div>
+  </div>
+  <div style="background:#0E141B; padding:0.3in 0.6in; display:flex; justify-content:space-between; align-items:center;">
+    <div class="wordmark" style="align-items:baseline;">
+      <svg class="star" viewBox="0 0 24 24" fill="#D9A441" width="13" height="13" style="align-self:center;"><path d="M12 1.5l2.98 7.09 7.66.62-5.83 5.02 1.78 7.47L12 17.77l-6.59 3.93 1.78-7.47-5.83-5.02 7.66-.62L12 1.5z"></path></svg>
+      <span class="name" style="font-size:15px; color:#FFFFFF;">WestStar Food</span>
+      <span class="tag" style="color:#3F9D63;">Co.</span>
+    </div>
+    <div style="font-size:10px; color:#9BB0A2;">1134 E Port Ave, Corpus Christi, TX 78401 &nbsp;·&nbsp; Port of Corpus Christi, Texas</div>
+  </div>
+</div>
+
 <script>
-let currentLang = 'en';
-let currentUnit = 'imp';
+const products = [
+  { n: 'Pinto Beans', c: 'Bean', color: '#C9A66B' },
+  { n: 'Black Beans', c: 'Bean', color: '#2B2622' },
+  { n: 'Red Kidney Beans', c: 'Bean', color: '#8B2E28' },
+  { n: 'Navy Beans', c: 'Bean', color: '#EDE6D6' },
+  { n: 'Great Northern Beans', c: 'Bean', color: '#E7E0CC' },
+  { n: 'Garbanzo Beans / Chickpeas', c: 'Bean', color: '#D8B978' },
+  { n: 'Black-Eyed Peas', c: 'Pea', color: '#E9DFC4' },
+  { n: 'Lima Beans', c: 'Bean', color: '#DCE0B0' },
+  { n: 'Adzuki Beans', c: 'Bean', color: '#7B2E2A' },
+  { n: 'Mung Beans', c: 'Bean', color: '#7C8C4A' },
+  { n: 'Fava Beans', c: 'Bean', color: '#C9C08A' },
+  { n: 'Cranberry Beans', c: 'Bean', color: '#C97B5C' },
+  { n: 'Green Lentils', c: 'Lentil', color: '#7C8449' },
+  { n: 'Brown Lentils', c: 'Lentil', color: '#7A5B3E' },
+  { n: 'Red Split Lentils', c: 'Lentil', color: '#C96A4A' },
+  { n: 'Black Beluga Lentils', c: 'Lentil', color: '#221E1C' },
+  { n: 'Yellow Split Peas', c: 'Pulse', color: '#E0C34A' },
+  { n: 'Green Split Peas', c: 'Pulse', color: '#93A25A' }
+];
+const grid = document.getElementById('productGrid');
+products.forEach(p => {
+  const div = document.createElement('div');
+  div.style.cssText = 'display:flex; align-items:center; gap:10px; border:1px solid #DEE9D8; border-radius:6px; padding:10px 12px; background:#FFFFFF;';
+  div.innerHTML = `<span style="width:22px;height:22px;border-radius:50%;flex-shrink:0;background:${p.color};border:1px solid rgba(0,0,0,0.08);"></span><div><div style="font-size:10.5px;font-weight:700;color:#16241C;line-height:1.25;">${p.n}</div><div style="font-size:8.5px;color:#7A8A7E;margin-top:1px;">${p.c}</div></div>`;
+  grid.appendChild(div);
+});
 
-function toggleLanguage() {
-  currentLang = currentLang === 'en' ? 'es' : 'en';
-  document.getElementById('lang-btn').classList.toggle('active');
-  
-  document.getElementById('title').textContent = currentLang === 'en' ? 'Commercial Agricultural Commodity Catalogue' : 'Catálogo Comercial de Productos Agrícolas';
-  document.getElementById('subtitle').textContent = currentLang === 'en' 
-    ? 'Direct-from-source dry beans, pulses, and grains packaged for distribution and international freight logistics.' 
-    : 'Frijoles secos, legumbres y granos directos de origen empacados para distribución y logística de carga internacional.';
-  document.getElementById('ship-title').textContent = currentLang === 'en' ? 'Freight & Bulk Cross-Border Shipping' : 'Envíos Transfronterizos Carga y A Granel';
-  document.getElementById('ship-desc').textContent = currentLang === 'en' 
-    ? 'Available in 25 lb, 50 lb, and 2,000 lb super sacks. Full truckload (FTL) and railcar export options across US/Mexico ports of entry.' 
-    : 'Disponible en sacos de 25 lb, 50 lb y súper sacos de 2,000 lb. Opciones de exportación por camión completo (FTL) y ferrocarril en puertos de entrada EE.UU./México.';
-  document.getElementById('sec-beans').textContent = currentLang === 'en' ? 'Dry Beans' : 'Frijoles Secos';
-  document.getElementById('sec-lentils').textContent = currentLang === 'en' ? 'Lentils & Pulses' : 'Lentejas y Legumbres';
-
-  document.querySelectorAll('.item-name').forEach(el => el.textContent = el.getAttribute(`data-${currentLang}`));
-  document.querySelectorAll('.item-desc').forEach(el => el.textContent = el.getAttribute(`data-${currentLang}`));
-  document.querySelectorAll('.cook-time').forEach(el => el.textContent = el.getAttribute(`data-${currentLang}`));
+const border = [
+  ['El Paso', '650 mi · 1,046 km'], ['Del Rio', '275 mi · 443 km'], ['Eagle Pass', '235 mi · 378 km'],
+  ['Laredo', '140 mi · 225 km'], ['Rio Grande City', '170 mi · 274 km'], ['Mission', '155 mi · 249 km'],
+  ['McAllen', '150 mi · 241 km'], ['Pharr', '148 mi · 238 km'], ['Progreso', '150 mi · 241 km'],
+  ['Harlingen', '135 mi · 217 km'], ['Brownsville', '163 mi · 262 km']
+];
+const metro = [
+  ['Port of Houston', '209 mi · 336 km'], ['San Antonio', '143 mi · 230 km'],
+  ['Austin', '211 mi · 340 km'], ['Dallas–Fort Worth', '400 mi · 644 km']
+];
+function fillTable(id, rows) {
+  const t = document.getElementById(id);
+  rows.forEach(([name, dist]) => {
+    const tr = document.createElement('tr');
+    tr.style.borderBottom = '1px solid #EAF0E6';
+    tr.innerHTML = `<td style="color:#16241C;font-weight:500;">${name}</td><td style="text-align:right;color:#3E5560;font-weight:600;">${dist}</td>`;
+    t.appendChild(tr);
+  });
 }
-
-function toggleUnits() {
-  currentUnit = currentUnit === 'imp' ? 'met' : 'imp';
-  document.getElementById('unit-btn').classList.toggle('active');
-  document.querySelectorAll('.unit-val').forEach(el => el.textContent = el.getAttribute(`data-${currentUnit}`));
-}
-
-function openModal(imgSrc, caption) {
-  document.getElementById('modalImg').src = imgSrc;
-  document.getElementById('modalCaption').textContent = caption;
-  document.getElementById('imageModal').classList.add('active');
-}
-
-function closeModal() {
-  document.getElementById('imageModal').classList.remove('active');
-}
+fillTable('tblBorder', border);
+fillTable('tblMetro', metro);
 </script>
+
 </body>
 </html>
